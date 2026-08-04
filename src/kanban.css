@@ -205,22 +205,18 @@
   border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
-.pro-kanban-card[data-state="dragging"] {
+.pro-kanban-card--dragging {
   opacity: 0.25 !important;
   border: 1px dashed var(--ctp-overlay0);
   background: transparent;
   box-shadow: none;
 }
 
-.pro-kanban-card[data-state="dragging-overlay"] {
-  background: var(--ctp-base);
-  border: 1px solid var(--ctp-mauve);
-  border-radius: 0.5rem;
-  padding: 0.875rem 1rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
-  cursor: grabbing;
-  transform: rotate(2.5deg);
-  pointer-events: none;
+.pro-kanban-drop-indicator {
+  height: 3px;
+  border-radius: 2px;
+  background: var(--ctp-mauve);
+  flex-shrink: 0;
 }
 
 .pro-kanban-empty-column-placeholder {
